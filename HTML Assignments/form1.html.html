@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Opening Form</title>
+</head>
+<body>
+    <center>
+    <h2 >ACCOUNT OPENING FORM</h2>
+    </center>
+    
+        <p style="background-color: #00FFFF;" ">Personal Details</p>
+
+        <form>
+            <p>Name*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required></p>
+            <p>Name of <br>
+                  (Father/Guardian):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="guardian"></p>
+            <p>Date of Birth* (dd-mm-yy):&nbsp;<input type="date" name="dob"  required c></p>
+
+            <p>Gender*: <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female" required> Female</p>
+
+            <label>Nationality: <input type="text" name="nationality" placeholder="Pakistani"></p>
+            
+
+            <p>Account Type*:  <input type="radio" name="account_type" value="savings" required> Savings
+            <input type="radio" name="account_type" value="fixed" required> Fixed</p>
+          
+
+            <p>Preferences: <input type="checkbox" name="banking" value="internatbanking" required> Internet Banking
+            <input type="checkbox" name="banking" value="mobilebanking" required> Mobile Banking
+            <input type="checkbox" name="banking" value="smsalert" required> SMS alerts</p>
+           
+
+            <p>Address:</p><br>
+            <textarea name="address" rows="9" cols="40"></textarea>
+
+            <p>Country*: </p>
+            <select name="country" required>
+                <option value="">Please select...</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+                </p>
+            <p>Zip Code*:
+            <input type="text" name="zip" required>
+            <p>Phone*: <input type="text" name="phone" required></p>
+            <p>Email*:
+            <input type="email" name="email" required></p>
+
+            <p>Password (6-8 characters)*:
+            <input type="password" name="password" minlength="6" maxlength="8" required></p>
+
+            <p>Verify Password*:
+            <input type="password" name="verify_password" minlength="6" maxlength="8" required></p>
+
+            <input type="submit" value="SEND">
+            <input type="reset" value="CLEAR">
+        </form>
+    
+</body>
+</html>
